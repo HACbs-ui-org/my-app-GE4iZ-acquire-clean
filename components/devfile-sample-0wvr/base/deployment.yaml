@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-0wvr
     spec:
       containers:
-      - image: quay.io/stonesoupuicluster/uidev-user-workload:GE4iZ-devfile-sample-0wvr
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:b2409e9e154d2cba654bfebf441c609c15d9079737bf7e60049b37bed77d801b
         name: my-nodejs
         ports:
         - containerPort: 3001
