@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-8eyq
+  namespace: sbudhwar-1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:13879cf07528755a7764639cac0fb83b9fad752b18b62aa62f0759d505a56583
+        name: my-java-quarkus
+        resources: {}
+status: {}
